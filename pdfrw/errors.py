@@ -6,6 +6,11 @@
 PDF Exceptions and error handling
 '''
 
+import logging
+
+
+log = logging.getLogger('pdfrw')
+
 
 class PdfError(Exception):
     "Abstract base class of exceptions thrown by this module"
