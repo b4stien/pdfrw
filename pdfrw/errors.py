@@ -6,15 +6,6 @@
 PDF Exceptions and error handling
 '''
 
-import logging
-
-
-logging.basicConfig(
-    format='[%(levelname)s] %(filename)s:%(lineno)d %(message)s',
-           level=logging.WARNING)
-
-log = logging.getLogger('pdfrw')
-
 
 class PdfError(Exception):
     "Abstract base class of exceptions thrown by this module"
